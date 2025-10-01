@@ -1,0 +1,10 @@
+#loginBtn{
+    width: 20%;
+    height: 30%;
+    max-width: 130px;
+    min-width: 140px;
+    min-height: fit-content;
+    border-radius: 50px;
+    background-color: #2c2c2c;
+    color: #f5f5f5;
+}

@@ -1,0 +1,10 @@
+#registerBtn{
+    width: 30%;
+    height: 25%;
+    max-width: 60px;
+    min-width: 210px;
+    min-height: fit-content;
+    border-radius: 50px;
+    background-color: #2c2c2c;
+    color: #f5f5f5;
+}
