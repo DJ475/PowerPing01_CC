@@ -11,11 +11,6 @@ input
   max-width: 350px;
 }
 
-/* For  */
-a{
-  color: #9A0707;
-}
-
 .containerInputCreds
 {
   display: flex;
