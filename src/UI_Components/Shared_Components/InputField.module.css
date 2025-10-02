@@ -11,6 +11,18 @@ input
   max-width: 350px;
 }
 
+#emailInputStyle{
+  background-color: #300101;
+  text-align: center;
+  color: #d9d9d9;
+  border-radius: 10px;
+  padding: 10px 10px 10px 10px;
+  margin: 0px 0px 20px 0px;
+  flex-grow: 1;
+  width: 110%;
+  max-width: 350px;
+}
+
 .containerInputCreds
 {
   display: flex;
@@ -18,5 +30,5 @@ input
   justify-content: center; 
   align-items: center;     
   height: 10%;            
-  padding: 45px 0px 20px 0px;
+  padding: 20px 0px 20px 0px;
 } 

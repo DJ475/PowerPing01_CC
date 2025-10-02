@@ -10,3 +10,12 @@
   border-radius: 45px;
   height: fit-content;
 }
+
+.powerPingLogo{
+  color: #8c8c8c;
+  vertical-align: top;
+  align-items: center;
+  text-align: center;
+  padding: 25px 25px 25px 25px; 
+  margin: 0;
+}

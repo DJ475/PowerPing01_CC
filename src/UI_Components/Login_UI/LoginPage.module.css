@@ -1,11 +1,5 @@
-#textGreeting{
-  color: #8c8c8c;
-  vertical-align: top;
-  text-align: center;
-  padding: 25px 25px 25px 25px; 
-  margin: 0;
-}
 
+/* div for "forgot password" link */
 #divForgotPswd
 {
   display:flex;
@@ -13,7 +7,8 @@
   justify-content: center; 
   align-items: center;     
   height: 5%;            
-  padding:5px 0px 20px 0px;
+  padding: 5px 0px 80px 0px;
+  margin-bottom: 2.5%;
   min-width: 100px;
-  color: wheat;
+  color: #9A0707;
 }

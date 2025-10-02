@@ -1,7 +1,9 @@
 import { ContainerBtn } from './ButtonContainer';
 import { LoginBtnOBJ } from './LoginButton';
-import { LoginInputOBJ } from './InputField';
+import { InputOBJ } from '../Shared_Components/InputField';
 import { RegisterBtnOBJ } from './RegisterButton';
+
+import {Link } from "react-router-dom";
 
 import styles from "./LoginPage.module.css"
 
@@ -18,33 +20,28 @@ export function LoginPage()
         {/* <div className="NavBarContainer">
         </div> */}
         <header >
-        <h3 id={styles.textGreeting}> <u>PowerPing01</u></h3>
+            <h3 className="powerPingLogo"> <u>PowerPing01</u></h3>
         </header>
         
         {/* Call Login Function */}
-        <LoginInputOBJ
+        <InputOBJ
         typeInput="text"
         placeholder="Username" 
         value={username}
         onChangeElement={(e)=>setUsername(e.target.value)}
         />
 
-        <LoginInputOBJ
+        <InputOBJ
         typeInput="password"
         placeholder="Password" 
         value={passsword}
         onChangeElement={(e)=>setPassword(e.target.value)}
         />
 
-        
-
-        {/* <Routes>
-        <Route path="/" element={<LoginPage />}></Route>
-        <Route path="forgotPassword" element={<ForgotPassword/>}/>
-        </Routes> */}
-
         <div id={styles.divForgotPswd}>
-        <h3> Forgot Password? </h3>
+            <Link to="/forgotPassword"> Forgot Password? </Link>
+            <br />
+            <br />
         </div>
         
         <ContainerBtn>
@@ -59,7 +56,9 @@ export function LoginPage()
                 onClickListenerR={(e)=>{alert("Registering Now")}}
             />
         </ContainerBtn>
-        
+
+
+
     </div>
     );
 }

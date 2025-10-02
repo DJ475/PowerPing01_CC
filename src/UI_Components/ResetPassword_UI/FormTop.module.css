@@ -1,0 +1,17 @@
+#linkStyle{
+    display: flex;
+    color: #9A0707;
+    text-align: center;
+}
+
+/* Contains Input for email and back to login link */
+.divWrapper
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    grid-column: 20px;
+    gap: 10px;
+    margin-bottom: 80%;
+}
