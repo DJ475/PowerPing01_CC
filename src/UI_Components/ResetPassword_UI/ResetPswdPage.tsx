@@ -4,7 +4,6 @@ import {ParentContainer} from "./ParentContainer";
 import {FormTop} from "./FormTop"
 import {FormBottom} from "./FormBottom";
 
-
 export function ResetPasswordPage()
 {
     const [emailString,setEmail] = useState("");

@@ -1,0 +1,32 @@
+.registerBtn{
+    border-radius: 50px;
+    background-color: #2c2c2c;
+    color: #f5f5f5;
+    padding: 10px 0px 10px 0px;
+    margin: 10px;
+}
+
+.loginBtn{
+    border-radius: 50px;
+    background-color: #2c2c2c;
+    color: #f5f5f5;
+}   
+
+.sm
+{
+    width: 20%;
+    height: 30px;
+    max-width: 130px;
+    min-width: 140px;
+    min-height: fit-content;
+    margin-top: 25px;
+    width: clamp(100px, 20vw, 140px);}
+
+.md{
+    width: 30%;
+    height: 25%;
+    max-width: 60px;
+    min-width: 210px;
+    min-height: fit-content;
+    width: clamp(140px, 25vw, 180px);
+}

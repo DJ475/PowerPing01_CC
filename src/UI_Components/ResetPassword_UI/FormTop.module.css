@@ -4,6 +4,7 @@
     text-align: center;
 }
 
+/* Smaller Screen Layout */
 /* Contains Input for email and back to login link */
 .divWrapper
 {
@@ -13,5 +14,18 @@
     align-items: center;
     grid-column: 20px;
     gap: 10px;
-    margin-bottom: 80%;
+    margin-bottom: 65%;
+}
+
+/* Larger Screens layout */
+@media screen and (min-width: 1200px) {
+    .divWrapper{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        grid-column: 20px;
+        gap: 10px;
+        margin-bottom: 20%;
+    }
 }

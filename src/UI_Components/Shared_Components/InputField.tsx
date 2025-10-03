@@ -8,13 +8,13 @@ type inputCredsProp = {
 }
 
 // function for text input jsx
-export function InputOBJ({typeInput,placeholder,onChangeElement}: inputCredsProp){
+export function InputOBJ({typeInput,placeholder,value,onChangeElement}: inputCredsProp){
     
     if(typeInput == "email")
     {
         return (
             <div className={styles.containerInputCreds}>
-                <input id={styles.emailInputStyle} type={typeInput} placeholder={placeholder} onChange={onChangeElement} />
+                <input className={styles.emailInputStyle} type={typeInput} placeholder={placeholder} onChange={onChangeElement} value={value}/>
             </div>
         );
     }
@@ -22,7 +22,7 @@ export function InputOBJ({typeInput,placeholder,onChangeElement}: inputCredsProp
     {
         return (
             <div className={styles.containerInputCreds}>
-                <input type={typeInput} placeholder={placeholder} onChange={onChangeElement} />
+                <input type={typeInput} placeholder={placeholder} onChange={onChangeElement} value={value} />
             </div>
         );
     }

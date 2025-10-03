@@ -1,11 +1,15 @@
 import { ContainerBtn } from './ButtonContainer';
-import { LoginBtnOBJ } from './LoginButton';
 import { InputOBJ } from '../Shared_Components/InputField';
-import { RegisterBtnOBJ } from './RegisterButton';
+
+// import { LoginBtnOBJ } from './LoginButton';
+// import { RegisterBtnOBJ } from './RegisterButton';
+
+import styles from "./LoginPage.module.css"
 
 import {Link } from "react-router-dom";
 
-import styles from "./LoginPage.module.css"
+import {Button} from "../Shared_Components/Button"
+
 
 import React, { useState } from 'react';
 // import LoginPage from "./UI_Components/Login_UI/Login"
@@ -45,15 +49,19 @@ export function LoginPage()
         </div>
         
         <ContainerBtn>
-            <LoginBtnOBJ 
-                loginBtnText="Login"
-                onClickListenerL={(e)=>{alert("Logging In Now")}}
+            <Button 
+                variant="loginBtn"
+                size="sm"
+                buttonText="Login"
+                onClickListener={(e)=>{alert("Logging In Now")}}
             />
             
             
-            <RegisterBtnOBJ
-                registerBtnText="Register"
-                onClickListenerR={(e)=>{alert("Registering Now")}}
+            <Button
+                variant="registerBtn"
+                size="md"
+                buttonText='Register'
+                onClickListener={(e)=>{alert("Registering Now")}}
             />
         </ContainerBtn>
 
