@@ -5,3 +5,14 @@ This repository is the frontend interface for a personal IoT web application tha
 This repository contains all the client-side logic, including the React/TypeScript components and user interface that facilitates communication with the backend.
 
 This Interface was manually converted from Figma design to React (JSX), CSS, and TypeScript: https://www.figma.com/design/LP8CeeLqkG6kTHzpqxCiAR/PowerPing01-UI-UX?node-id=0-1&t=38wsl8wtPaoa6JVN-1
+
+## Dev Branch Log  
+**October 4, 2025**  
+Work completed on `DevBranch_Frontend`:
+- Refactor layout and button container for responsive alignment.
+- Update FormBottom and added MainPageLayout for modular reuse.
+- Improve CSS modularity and spacing logic.
+- Initialize NavBar Setup.
+- Structure components for phone vs desktop scaling using media queries.
+- Complete resetPaswdPage Components.
+
