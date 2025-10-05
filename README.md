@@ -8,7 +8,7 @@ This Interface was manually converted from Figma design to React (JSX), CSS, and
 
 ## Dev Branch Log  
 **October 4, 2025**  
-Work completed on `DevBranch_Frontend`:
+Work completed on `DevBranch_Frontend`[https://github.com/DJ475/PowerPing01_CC/tree/DevBranch_Frontend]:
 - Refactor layout and button container for responsive alignment.
 - Update FormBottom and added MainPageLayout for modular reuse.
 - Improve CSS modularity and spacing logic.
