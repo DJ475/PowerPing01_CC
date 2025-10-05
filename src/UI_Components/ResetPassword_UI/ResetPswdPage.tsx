@@ -4,26 +4,31 @@ import {ParentContainer} from "./ParentContainer";
 import {FormTop} from "./FormTop"
 import {FormBottom} from "./FormBottom";
 
+import { MainPageLayout } from "../Shared_Components/MainPageLayout"
+
 export function ResetPasswordPage()
 {
     const [emailString,setEmail] = useState("");
 
     return(
-        <ParentContainer>
-            <header >
-                <h3 className="powerPingLogo"> <u>PowerPing01</u></h3>
-            </header>
+        <MainPageLayout
+            showHeaderMessage = {true}
+        >
+            <ParentContainer>
+                
 
-            <FormTop 
-                emailString={emailString}
-                setEmail={(e)=>setEmail(e.target.value)}
-            />
+                <FormTop 
+                    emailString = {emailString}
+                    setEmail={(e)=>setEmail(e.target.value)}
+                />
 
-            <FormBottom 
-
-            />
-            
-        </ParentContainer>
+                <FormBottom 
+                    emailValueEntered = {emailString}
+                />
+                
+            </ParentContainer>
+        </MainPageLayout>
+        
 
         // 
     );

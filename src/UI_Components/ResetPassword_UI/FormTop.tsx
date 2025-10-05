@@ -12,7 +12,7 @@ type FormTopProps = {
 export function FormTop({emailString,setEmail}: FormTopProps){
     return(
         <div className={styles.divWrapper}>
-            <InputOBJ typeInput={"email"} placeholder={"Email"} value={emailString} onChangeElement={setEmail}></InputOBJ>
+            <InputOBJ typeInput={"email"} variation="emailInput" size="md" placeholder={"Email"} value={emailString} onChangeElement={setEmail}></InputOBJ>
             <Link to="/" className={styles.linkStyle}> Back to Login </Link>
         </div>
     );

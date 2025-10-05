@@ -12,18 +12,24 @@
     color: #f5f5f5;
 }   
 
+.resetPswdBtn{
+    color: #f5f5f5;
+    background-color: #2c2c2c;
+    border-radius: 100px;
+    padding: 0.5rem 1rem;
+    min-width: 140px;
+}
+
 .sm
 {
     width: 20%;
     height: 30px;
-    max-width: 130px;
     min-width: 140px;
     min-height: fit-content;
     margin-top: 25px;
     width: clamp(100px, 20vw, 140px);}
 
 .md{
-    width: 30%;
     height: 25%;
     max-width: 60px;
     min-width: 210px;

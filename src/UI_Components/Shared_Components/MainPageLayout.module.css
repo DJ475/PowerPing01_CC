@@ -1,0 +1,26 @@
+.divMainPageLayout{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+
+    min-height: 100vh;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0.05rem 2rem 2rem 2rem; 
+    margin: 2px;
+}
+
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+main
+{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

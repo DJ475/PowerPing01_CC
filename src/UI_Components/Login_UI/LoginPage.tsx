@@ -9,6 +9,7 @@ import styles from "./LoginPage.module.css"
 import {Link } from "react-router-dom";
 
 import {Button} from "../Shared_Components/Button"
+import {MainPageLayout} from "../Shared_Components/MainPageLayout"
 
 
 import React, { useState } from 'react';
@@ -20,53 +21,53 @@ export function LoginPage()
     const [username,setUsername] = useState("");
     const [passsword,setPassword] = useState("");
     return (
-        <div className={styles.ExampleBackground}>
-        {/* <div className="NavBarContainer">
-        </div> */}
-        <header >
-            <h3 className="powerPingLogo"> <u>PowerPing01</u></h3>
-        </header>
         
-        {/* Call Login Function */}
-        <InputOBJ
-        typeInput="text"
-        placeholder="Username" 
-        value={username}
-        onChangeElement={(e)=>setUsername(e.target.value)}
-        />
+        <MainPageLayout
+            showHeaderMessage = {true}
+        > 
 
-        <InputOBJ
-        typeInput="password"
-        placeholder="Password" 
-        value={passsword}
-        onChangeElement={(e)=>setPassword(e.target.value)}
-        />
+            {/* Call Login Function */}
+            <InputOBJ
+            typeInput="text"
+            variation="usernameInput"
+            size="md"
+            placeholder="Username" 
+            value={username}
+            onChangeElement={(e)=>setUsername(e.target.value)}
+            />
 
-        <div id={styles.divForgotPswd}>
+            <InputOBJ
+            typeInput="password"
+            variation="passwordInput"
+            size="md"
+            placeholder="Password" 
+            value={passsword}
+            onChangeElement={(e)=>setPassword(e.target.value)}
+            />
+
+            <div id={styles.divForgotPswd}>
             <Link to="/forgotPassword"> Forgot Password? </Link>
             <br />
             <br />
-        </div>
-        
-        <ContainerBtn>
+            </div>
+
+            <ContainerBtn>
             <Button 
                 variant="loginBtn"
                 size="sm"
                 buttonText="Login"
-                onClickListener={(e)=>{alert("Logging In Now")}}
+                onClickFunction={(e)=>{alert("Logging In Now")}}
             />
-            
-            
+
+
             <Button
                 variant="registerBtn"
                 size="md"
                 buttonText='Register'
-                onClickListener={(e)=>{alert("Registering Now")}}
+                onClickFunction={(e)=>{alert("Registering Now")}}
             />
-        </ContainerBtn>
+            </ContainerBtn>
 
-
-
-    </div>
+        </MainPageLayout>
     );
 }

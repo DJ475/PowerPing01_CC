@@ -7,7 +7,7 @@ type ContainerProp = {
 
 export function ParentContainer({children}: ContainerProp){
     return (
-        <div id={styles.ContainerForEmail}>
+        <div className={styles.DivContainer}>
             {children}
         </div>
     );

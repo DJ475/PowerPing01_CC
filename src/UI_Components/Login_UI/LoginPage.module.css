@@ -1,4 +1,5 @@
 
+/* Smaller Screen Layout */
 /* div for "forgot password" link */
 #divForgotPswd
 {
@@ -6,9 +7,23 @@
   flex-direction: column;
   justify-content: center; 
   align-items: center;     
-  height: 5%;            
-  padding: 5px 0px 80px 0px;
-  margin-bottom: 2.5%;
+  padding: 10px 0px 30px 0px;
+  margin-bottom: 20px;
   min-width: 100px;
   color: #9A0707;
+}
+
+/* Larger Screen layout  */
+@media screen and (min-width: 1200px) {
+  #divForgotPswd
+  {
+    display:flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;     
+    padding: 5px 0px 25px 0px;
+    margin-bottom: 0.25%;
+    min-width: 100px;
+    color: #9A0707;
+  }
 }
