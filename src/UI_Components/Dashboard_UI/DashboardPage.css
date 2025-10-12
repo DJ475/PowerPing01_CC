@@ -1,0 +1,7 @@
+@tailwind components;
+
+.divMain{
+    @apply
+    background-color: #42160E;
+    z-index: 1;
+}

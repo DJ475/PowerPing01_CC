@@ -1,5 +1,4 @@
 import { ReactNode } from "react";
-import styles from "./ParentContainer.module.css"
 
 type ContainerProp = {
     children: ReactNode;
@@ -7,7 +6,7 @@ type ContainerProp = {
 
 export function ParentContainer({children}: ContainerProp){
     return (
-        <div className={styles.DivContainer}>
+        <div className="DivContainer">
             {children}
         </div>
     );

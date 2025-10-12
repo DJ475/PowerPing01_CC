@@ -1,0 +1,14 @@
+@tailwind components;
+
+.NavBarContainer {
+  @apply flex bg-[#300101] w-full rounded-[25px] flex-shrink overflow-y-auto box-border;
+
+  /* Large screens (≥1280px by default for xl) */
+  @apply lg:p-5;
+
+  /* Medium screens (≥768px by default for md) */
+  @apply md:p-[25px] md:mx-auto;
+
+  /* Small screens (≤640px by default for sm) */
+  @apply sm:px-[19px] sm:py-[30px] sm:w-[calc(100%+50px)] sm:-ml-[10px] sm:-mr-[10px];
+}

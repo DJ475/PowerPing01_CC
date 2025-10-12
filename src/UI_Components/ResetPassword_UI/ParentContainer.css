@@ -1,0 +1,13 @@
+@tailwind components;
+
+.DivContainer
+{
+    @apply
+    flex
+    flex-col
+    items-center
+    justify-start
+    box-border
+    min-h-[80vh]
+    w-full
+}

@@ -1,7 +1,10 @@
+@tailwind components;
+
 #linkStyle{
-    display: flex;
-    color: #9A0707;
-    text-align: center;
+    @apply
+    flex
+    text-brandRedText
+    text-center;
 }
 
 /* Smaller Screen Layout */

@@ -1,25 +1,32 @@
 import { ContainerBtn } from './ButtonContainer';
 import { InputOBJ } from '../Shared_Components/InputField';
 
+import {LoginUser} from "../../Classes/Login";
+
 // import { LoginBtnOBJ } from './LoginButton';
 // import { RegisterBtnOBJ } from './RegisterButton';
 
-import styles from "./LoginPage.module.css"
-
-import {Link } from "react-router-dom";
+import {Link, useNavigate } from "react-router-dom";
 
 import {Button} from "../Shared_Components/Button"
 import {MainPageLayout} from "../Shared_Components/MainPageLayout"
 
 
 import React, { useState } from 'react';
+
+
 // import LoginPage from "./UI_Components/Login_UI/Login"
 // import ForgotPassword from "./UI_Components/ResetPassword_UI/ResetPswd"
+
+let LoginOBJ: LoginUser;
 
 export function LoginPage()
 {
     const [username,setUsername] = useState("");
-    const [passsword,setPassword] = useState("");
+    const [password,setPassword] = useState("");
+    const navigateOBJ = useNavigate();
+    LoginOBJ = new LoginUser(navigateOBJ); 
+
     return (
         
         <MainPageLayout
@@ -41,11 +48,11 @@ export function LoginPage()
             variation="passwordInput"
             size="md"
             placeholder="Password" 
-            value={passsword}
+            value={password}
             onChangeElement={(e)=>setPassword(e.target.value)}
             />
 
-            <div id={styles.divForgotPswd}>
+            <div className="divForgotPswd">
             <Link to="/forgotPassword"> Forgot Password? </Link>
             <br />
             <br />
@@ -56,7 +63,11 @@ export function LoginPage()
                 variant="loginBtn"
                 size="sm"
                 buttonText="Login"
-                onClickFunction={(e)=>{alert("Logging In Now")}}
+                onClickFunction={(e)=>{
+                    LoginOBJ.setUsername("DJ");
+                    LoginOBJ.setPassword("123abc@");
+                    LoginOBJ.login()
+                }}
             />
 
 
@@ -64,7 +75,7 @@ export function LoginPage()
                 variant="registerBtn"
                 size="md"
                 buttonText='Register'
-                onClickFunction={(e)=>{alert("Registering Now")}}
+                onClickFunction={(e)=>{alert("Registering User Now")}}
             />
             </ContainerBtn>
 

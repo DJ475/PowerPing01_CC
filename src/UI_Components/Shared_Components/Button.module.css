@@ -1,38 +1,51 @@
-.registerBtn{
-    border-radius: 50px;
-    background-color: #2c2c2c;
-    color: #f5f5f5;
-    padding: 10px 0px 10px 0px;
-    margin: 10px;
-}
+@tailwind components;
 
-.loginBtn{
-    border-radius: 50px;
-    background-color: #2c2c2c;
-    color: #f5f5f5;
-}   
-
-.resetPswdBtn{
-    color: #f5f5f5;
-    background-color: #2c2c2c;
-    border-radius: 100px;
-    padding: 0.5rem 1rem;
-    min-width: 140px;
-}
-
-.sm
+@layer components
 {
-    width: 20%;
-    height: 30px;
-    min-width: 140px;
-    min-height: fit-content;
-    margin-top: 25px;
-    width: clamp(100px, 20vw, 140px);}
+    .registerBtn{
+        @apply
+        rounded-[50px]
+        bg-brandButtonColor
+        text-brandBtnTextColor
+        pt-[10px] pr-0 pb-[10px] pl-0
+        m-[10px]
+    }
 
-.md{
-    height: 25%;
-    max-width: 60px;
-    min-width: 210px;
-    min-height: fit-content;
-    width: clamp(140px, 25vw, 180px);
+    .loginBtn{
+        @apply
+        rounded-[50px]
+        bg-brandButtonColor
+        text-brandBtnTextColor
+        p-[5px]
+    }   
+
+    .resetPswdBtn{
+        @apply
+        bg-brandButtonColor
+        text-brandBtnTextColor
+        rounded-[100px]
+        pt-2
+        pr-4
+        pb-2
+        pl-4
+        min-w-[140px]
+    }
+
+    .sm{
+        @apply
+        h-[30px]
+        min-w-[140px]
+        min-h-fit
+        mt-[25px]
+        w-[100px];    
+    }
+
+    .md{
+        @apply
+        h-[25%]
+        max-w-[60px]
+        min-w-[210px]
+        min-h-fit
+        w-[180px];
+    }
 }

@@ -1,0 +1,8 @@
+@tailwind components;
+
+.divForgotPswd{
+  @apply
+  text-brandRedText
+  pt-[10px] pr-0 pb-[30px] pl-0
+  mb-[-5px];
+}

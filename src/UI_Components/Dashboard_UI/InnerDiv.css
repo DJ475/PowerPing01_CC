@@ -1,0 +1,14 @@
+@tailwind components;
+
+.innerContainer {
+  @apply bg-[#541313] flex flex-col items-center justify-start text-center rounded-[45px] min-h-[65vh] h-full w-full box-border m-[30px];
+
+  /* Large screens (≥1200px) */
+  @apply xl:rounded-[25px] xl:m-[15px] xl:min-h-[60vh] xl:px-[100px] xl:py-[20px] xl:max-w-[50rem] xl:w-[calc(100%+50px)];
+
+  /* Medium screens (601px–1199px) */
+  @apply md:min-h-[85vh] md:max-w-[600px] md:px-[15px] md:py-[20px] md:mx-auto md:rounded-[25px];
+
+  /* Small screens (≤600px) */
+  @apply sm:min-h-[65vh] sm:max-w-[250px] sm:px-[15px] sm:py-[20px] sm:mx-auto sm:rounded-[25px];
+}

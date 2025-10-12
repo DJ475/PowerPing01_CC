@@ -5,6 +5,20 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter } from 'react-router-dom';
 
+import "./UI_Components/Dashboard_UI/MainDiv.css"
+import "./UI_Components/Dashboard_UI/InnerDiv.css"
+
+import "./UI_Components/Shared_Components/NavBar.css";
+
+import "./UI_Components/Login_UI/LoginPage.css";
+import "./UI_Components/Login_UI/ButtonContainer.css";
+
+import "./UI_Components/Shared_Components/MainPageLayout.css"
+
+import "./UI_Components/ResetPassword_UI/ParentContainer.css"
+import "./UI_Components/ResetPassword_UI/FormTop.css"
+// Form Bottom uses specialized tailwind components so its included in FormBottom.tsx instead of here in index.tsx
+
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement

@@ -1,0 +1,33 @@
+@tailwind components;
+
+/* Default */
+.containerInputButtons {
+  @apply
+    flex
+    flex-col
+    justify-center
+    items-center
+    max-h-[200px]
+    bg-brandRedContainer
+    rounded-3xl
+    p-1
+    w-full
+    max-w-[400px]
+    min-h-[100px]
+    gap-[10px]
+    pt-[10px] pr-0 pb-[20px] pl-0
+}
+
+/* Larger Screens */
+@screen lg
+{
+  .containerInputButtons
+  {
+    @apply
+    bg-brandRedContainer
+    rounded-3xl
+    w-[100%]
+    min-w-fit
+    min-h-[140px]
+  }
+}

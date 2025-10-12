@@ -1,5 +1,4 @@
 import React, {ReactNode} from "react";
-import styles from "./ButtonContainer.module.css"
 
 type divContainerBtn = {
     children : ReactNode;
@@ -8,7 +7,7 @@ type divContainerBtn = {
 // function for div/container jsx
 export function ContainerBtn({children} : divContainerBtn){
     return(
-        <div className={styles.containerInputButtons}>
+        <div className="containerInputButtons">
             {children}
         </div>
     );

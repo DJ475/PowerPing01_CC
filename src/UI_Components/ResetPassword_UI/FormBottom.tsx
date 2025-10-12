@@ -1,6 +1,7 @@
-import styles from "./FormBottom.module.css"
 
 import {Button} from "../Shared_Components/Button"
+
+import styles from "./FormBottom.module.css"
 
 async function registerNewUser(email: string) {
     console.log("Got Email Vaue of:" + email);
@@ -13,7 +14,7 @@ type BottomProp = {
 export function FormBottom({emailValueEntered}: BottomProp)
 {
     return(
-        <div className={styles.divContainerButton}>
+        <div className={`mx-auto ${styles.divContainerButton}`}>
             <Button
                 variant="resetPswdBtn"
                 size="md"

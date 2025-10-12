@@ -15,8 +15,6 @@ export function ResetPasswordPage()
             showHeaderMessage = {true}
         >
             <ParentContainer>
-                
-
                 <FormTop 
                     emailString = {emailString}
                     setEmail={(e)=>setEmail(e.target.value)}

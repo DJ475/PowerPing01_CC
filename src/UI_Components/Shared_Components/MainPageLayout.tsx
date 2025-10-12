@@ -1,6 +1,4 @@
 import { ReactNode } from "react"
-import styles from "../Shared_Components/MainPageLayout.module.css"
-
 
 type  MainPageProps = {
     children : ReactNode
@@ -11,7 +9,7 @@ export function MainPageLayout({children, showHeaderMessage}: MainPageProps)
 {
     // returns div container with header for pages that display the logo    
     return(
-        <div className={styles.divMainPageLayout}>
+        <div className="divMainPageLayout">
             {showHeaderMessage && (<header> <h3 className="powerPingLogo"> <u>PowerPing01</u> </h3> </header>)}
             <main>
                 {children}

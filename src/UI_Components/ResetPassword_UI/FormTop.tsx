@@ -2,7 +2,6 @@ import React from "react";
 import {InputOBJ} from "../Shared_Components/InputField";
 import {Link} from "react-router-dom"
 
-import styles from "./FormTop.module.css"
 
 type FormTopProps = {
     emailString: string;
@@ -11,9 +10,9 @@ type FormTopProps = {
 
 export function FormTop({emailString,setEmail}: FormTopProps){
     return(
-        <div className={styles.divWrapper}>
+        <div className="divWrapper">
             <InputOBJ typeInput={"email"} variation="emailInput" size="md" placeholder={"Email"} value={emailString} onChangeElement={setEmail}></InputOBJ>
-            <Link to="/" className={styles.linkStyle}> Back to Login </Link>
+            <Link to="/" id="linkStyle"> Back to Login </Link>
         </div>
     );
 }
